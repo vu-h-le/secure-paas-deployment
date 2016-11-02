@@ -7,6 +7,11 @@ Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "NetworkResourceGroup", "Net
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AppAzureResourceGroup", "AppAzureResourceGroup\AppAzureResourceGroup.deployproj", "{64450598-4B52-4FF9-96E1-C0A81C51CA61}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeploymentInstructions", "DeploymentInstructions", "{FEFD194A-7C68-457D-92C9-30CCBE479568}"
+	ProjectSection(SolutionItems) = preProject
+		..\Deployment instructions.pdf = ..\Deployment instructions.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
