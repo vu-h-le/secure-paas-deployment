@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>64450598-4b52-4ff9-96e1-c0a81c51ca61</ProjectGuid>
+    <ProjectGuid>50423a72-6f9f-4bc2-a598-b2b68b2bd255</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworkIdentifier>Deployment</TargetFrameworkIdentifier>
@@ -26,11 +26,16 @@
   <!-- vertag<:>end -->
   <ItemGroup>
     <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
-    <Content Include="Templates\azuredeploy.json" />
-    <Content Include="Templates\azuredeploy.parameters.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
+    <None Include="Scripts\Create-SelfSignCertificate.ps1" />
+    <None Include="Scripts\CreateKeyVaultAndCertificate.ps1" />
+    <None Include="Scripts\Remove-AllFromResourceGroup.ps1" />
+    <None Include="Templates\ase-private.json" />
+    <None Include="Templates\ase-private.parameters.json" />
+    <None Include="Templates\asf-private.json" />
+    <None Include="Templates\asf-private.parameters.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>

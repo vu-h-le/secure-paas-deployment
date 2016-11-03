@@ -1,0 +1,62 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newStorageAccountName": {
+      "value": "demostorage456"
+    },
+    "virtualNetworkName": {
+      "value": "WUS-NP-VNET-SEC"
+    },
+    "virtualNetworkAddressRange": {
+      "value": "172.25.255.0/25"
+    },
+    "adSubnetName": {
+      "value": "WUS-NP-SUB-ID_172.25.255.32_27"
+    },
+    "adSubnetAddressRange": {
+      "value": "172.25.255.32/27"
+    },
+    "adAvailabilitySetName": {
+      "value": "WUS-NP-AS-DomainControllers"
+    },
+      "adPDCNicName": {
+        "value": "WUS-NP-NIC-PrimaryDC"
+      },
+      "adPDCNicIPAddress": {
+        "value": "172.25.255.36"
+      },
+      "adBDCNicName": {
+        "value": "WUS-NP-NIC-BackupDC"
+      },
+      "adBDCNicIPAddress": {
+        "value": "172.25.255.37"
+      },
+      "adPDCVMName": {
+        "value": "WUS-NP-VM-PDC"
+      },
+      "adBDCVMName": {
+        "value": "WUS-NP-VM-BDC"
+      },
+      "adminUsername": {
+        "value": "vmadmin"
+      },
+      "adminPassword": {
+        "reference": {
+            "keyVault": {
+                "id": "/subscriptions/[subscription id]/resourceGroups/[resource group name]/providers/Microsoft.KeyVault/vaults/[KeyVault name]"
+            },
+            "secretName": "[secret name]"
+        }
+      },
+      "adVMSize": {
+        "value": "Standard_D1"
+      },
+      "domainName": {
+        "value": "[your domain here, i.e. contoso.com]"
+      },
+      "assetLocation": {
+        "value": "https://github.com/Azure/azure-quickstart-templates/raw/master/active-directory-new-domain-ha-2-dc/"
+      }
+    }
+  }

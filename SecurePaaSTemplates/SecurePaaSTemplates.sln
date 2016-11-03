@@ -5,12 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "NetworkResourceGroup", "NetworkResourceGroup\NetworkResourceGroup.deployproj", "{A836A6A7-264D-4E52-9DA4-08F8C683BB29}"
 EndProject
-Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "LoBAzureResourceGroup", "AppAzureResourceGroup\LoBAzureResourceGroup.deployproj", "{64450598-4B52-4FF9-96E1-C0A81C51CA61}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DeploymentInstructions", "DeploymentInstructions", "{FEFD194A-7C68-457D-92C9-30CCBE479568}"
 	ProjectSection(SolutionItems) = preProject
 		..\Deployment instructions.pdf = ..\Deployment instructions.pdf
 	EndProjectSection
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "LoBResourceGroup", "LoBResourceGroup\LoBResourceGroup.deployproj", "{50423A72-6F9F-4BC2-A598-B2B68B2BD255}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{A836A6A7-264D-4E52-9DA4-08F8C683BB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A836A6A7-264D-4E52-9DA4-08F8C683BB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A836A6A7-264D-4E52-9DA4-08F8C683BB29}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64450598-4B52-4FF9-96E1-C0A81C51CA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64450598-4B52-4FF9-96E1-C0A81C51CA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64450598-4B52-4FF9-96E1-C0A81C51CA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64450598-4B52-4FF9-96E1-C0A81C51CA61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50423A72-6F9F-4BC2-A598-B2B68B2BD255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50423A72-6F9F-4BC2-A598-B2B68B2BD255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50423A72-6F9F-4BC2-A598-B2B68B2BD255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50423A72-6F9F-4BC2-A598-B2B68B2BD255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

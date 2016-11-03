@@ -1,0 +1,54 @@
+﻿{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageAccountName": {
+      "value": "demostorage456"
+    },
+    "existingVnetResourceId": {
+      "value": "/subscriptions/[subscription id]/resourceGroups/[resource group name]/providers/Microsoft.Network/virtualNetworks/WUS-NP-VNET-App"
+    },
+    "subnetName": {
+      "value": "WUS-NP-SUB-MGT_172.25.254.192_26"
+    },
+    "vmNICName": {
+      "value": "WUS-NP-NIC-JumpBox"
+    },
+    "vmInternalIPAddress": {
+      "value": "172.25.254.196"
+    },
+    "vmName": {
+      "value": "WUS-NP-VM-JBX"
+    },
+    "adminUsername": {
+      "value": "vmadmin"
+    },
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/[subscription id]/resourceGroups/[resource group name]/providers/Microsoft.KeyVault/vaults/[KeyVault name]"
+        },
+        "secretName": "[secret name]"
+      }
+    },
+    "vmSize": {
+      "value": "Standard_D2"
+    },
+    "imagePublisher": {
+      "value": "MicrosoftVisualStudio"
+    },
+    "imageOffer": {
+      "value": "VisualStudio"
+    },
+    "imageSKU": {
+      "value": "VS-2015-Comm-VSU3-AzureSDK-291-WS2012R2"
+    },
+
+    "vmNSGName": {
+      "value": "WUS-NP-NSG-JumpBox"
+    },
+    "vmPublicIPName": {
+      "value": "WUS-NP-PIP-JumpBox"
+    }
+  }
+}

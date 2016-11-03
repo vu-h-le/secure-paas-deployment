@@ -26,11 +26,20 @@
   <!-- vertag<:>end -->
   <ItemGroup>
     <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
-    <Content Include="Templates\azuredeploy.json" />
-    <Content Include="Templates\azuredeploy.parameters.json" />
     <None Include="Deployment.targets">
       <Visible>False</Visible>
     </None>
+    <None Include="Scripts\Add-ProbeToExistingGateway.ps1" />
+    <None Include="Scripts\Configure-AppGatewayCertificate.ps1" />
+    <None Include="Scripts\Remove-AllFromResourceGroup.ps1" />
+    <None Include="Templates\activedirectory-optional.json" />
+    <None Include="Templates\activedirectory-optional.parameters.json" />
+    <None Include="Templates\applicationgateway.json" />
+    <None Include="Templates\applicationgateway.parameters.json" />
+    <None Include="Templates\jumpbox-optional.json" />
+    <None Include="Templates\jumpbox-optional.parameters.json" />
+    <None Include="Templates\network.json" />
+    <None Include="Templates\network.parameters.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
